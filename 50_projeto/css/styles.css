@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(to right, #e65763, #34073d);
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#tasks-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Tasks Form */
+
+#tasks-header {
+  margin-top: 50px;
+}
+
+#add-task-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-task-form input {
+  box-sizing: border-box;
+  border: 1px solid #34073d;
+  background: #fff;
+  color: #34073d;
+  padding: 15px;
+  font-size: 18px;
+  width: 50%;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  height: 50px;
+}
+
+#add-task-form input::placeholder {
+  color: #34073d;
+}
+
+#add-task-form input:focus {
+  outline: none;
+}
+
+#add-btn {
+  background: #fff;
+  border: 1px solid #34073d;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50px;
+  height: 50px; 
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: none; 
+  padding: 0;
+}
+
+#add-btn:hover {
+  background-color: #34073d;
+  color: #fff;
+}
+
+ion-icon {
+  font-size: 25px;
+}
+
+/* Tasks Container */
+
+#task-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#task-list li {
+  text-align: left;
+  width: 50%;
+  max-width: 400px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  border-bottom: 2px solid #34073d;
+  background-color: #fff;
+  color: #34073d;
+  margin: 15px auto;
+  padding-left: 15px;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list li span {
+  font-size: 18px;
+  flex: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+#task-list ion-icon {
+  transition: 0.5s;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.done-btn {
+  color: #09e01b;
+}
+
+.done-btn:hover {
+  color: #fff;
+  background-color: #09e01b;
+  border-radius: 5px;
+}
+
+.remove-btn {
+  color: #eb0927;
+}
+
+.remove-btn:hover {
+  color: #fff;
+  background-color: #eb0927;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+#task-list li.done {
+  background-color: #34073d;
+  color: #fff;
+  text-decoration: line-through;
+}
